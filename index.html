@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Foonasi - Food Landing Page</title>
+  <title>Foondasi - Food Landing Page</title>
   <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -46,9 +46,18 @@
       z-index: 1000;
     }
 
-    /* Logo */
-    .logo img {
-      height: 55px;
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      /* Jarak antar logo */
+    }
+
+    .logo-img {
+      height: 45px;
+      /* Tinggi logo sama */
+      width: auto;
+      /* Lebar otomatis agar tidak distorsi */
     }
 
     /* Menu desktop */
@@ -576,7 +585,9 @@
 <body>
   <header class="header">
     <div class="logo">
-      <img src="logo.png" alt="Foonasi Logo" />
+      <img src="logo.png" alt="Logo 1" class="logo-img" />
+      <img src="logokampus.png" alt="Logo 2" class="logo-img" />
+      <img src="logoyayasan.png" alt="Logo 3" class="logo-img" />
     </div>
     <button class="hamburger" id="hamburger-btn">☰</button>
     <nav id="nav-menu">
